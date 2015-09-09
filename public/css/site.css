@@ -70,3 +70,42 @@ h1, h2, h3, h4 , h5, .special-text {
     width: 50%;
   }
 }
+
+.btn-circle {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 12px;
+  line-height: 1.42;
+  border-radius: 20px;
+}
+
+.btn-circle.link {   
+    right: 15px;
+    z-index: 1000;
+    color: white;    
+    float: left;
+}
+
+.btn-circle.link:hover {
+    background-color:rgba(255, 0, 0, 0.5) !important;
+}
+
+.btn-circle.link.github {
+    background-color: rgba(128, 128, 128,0.5);        
+}
+
+.btn-circle.link.facebook {
+    background-color: rgba(0, 0, 255,0.5);        
+}
+
+.links-container {
+    display: inline-block;
+    bottom: 50px;
+    left:15px;    
+    width: 100%;
+    position: absolute;
+    height: 50px;
+    
+}
