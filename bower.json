@@ -1,0 +1,21 @@
+{
+  "name": "ppl about us",
+  "version": "0.0.0",
+  "authors": [
+    "kenneth <kenneth.bolico@gmail.com>"
+  ],
+  "description": "about us",
+  "main": "index.html",
+  "license": "none",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "jquery": "~2.1.4"
+  }
+}
