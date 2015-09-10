@@ -10,9 +10,13 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel='stylesheet'>
     <link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/reset.css">
+     <link href='public\css\site.css' rel='stylesheet'>
     <link rel="stylesheet" href="public/css/style.css">
+    
+
+    
 </head>
-<body>
+<body ng-app="pplMainSiteApp">
 
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -48,118 +52,21 @@
             </div>
         </div>
     </nav>
-
-    <section class="banner">
-        <div class="banner-content text-center">
-            <div class="container">
-                <img src="public/images/header-logo.png" class="img-responsive" alt="header-logo">
-                <h1>GREAT WORK IS THE NATURAL BYPRODUCT OF HAPPINESS.</h1>
-                <a href="#" class="btn-custom">learn more <span class="glyphicon glyphicon-circle-arrow-right"></span></a>
-
-                <div class="scroll-down">
-                    <a href="#service"><i class="fa fa-angle-down"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="whatwedo">
-        <div class="container">
-            <h1 class="text-center">What we do</h1>
-            <br />
-            <div class="row content">
-                <h2>PHILANTROPHY THROUGH SOFTWARE DEVELOPMENT</h2>
-                <p>
-                    Porem ipsum dolor sit amet, consectetur adipisicing elit. Ut quis, quaerat veniam cumque pariatur molestiae
-                     porro dolores numquam! Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                </p>
-            </div>
-            <hr />
-            <div class="row content">
-                <div class="col-md-6 col-sm-6 col-xs-12 graphic">
-                    <img src="public/images/bm.jpg" />
-                </div>
-                <div class="col-md-6 col-sm-6  col-xs-12">
-                    <h2>HELP</h2>
-                    <p>
-                        Horem ipsum dolor sit amet, consectetur adipisicing elit. Ut quis, quaerat veniam cumque pariatur molestiae
-                     porro dolores numquam! Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    </p>
-                </div>
-
-            </div>
-            <hr />
-            <div class="row content">
-                <div class="col-md-6 col-sm-6 col-xs-12 ">
-                    <h2>LEARN</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quis, quaerat veniam cumque pariatur molestiae
-                     porro dolores numquam! Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    </p>
-                </div>
-                <div class="col-md-6 col-sm-6  col-xs-12 graphic">
-                    <img src="public/images/bm.jpg" />
-                </div>
-            </div>
-            <hr />
-            <div class="row content">
-                <div class="col-md-6 col-sm-6  col-xs-12 graphic">
-                    <img src="public/images/bm.jpg" />
-                </div>
-                <div class="col-md-6 col-sm-6 col-xs-12">
-                    <h2>EARN</h2>
-                    <p>
-                        Eorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quis, quaerat veniam cumque pariatur molestiae
-                     porro dolores numquam! Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    Sunt ad, beatae laboriosam nemo pariatur voluptate. Ratione ad itaque quaerat qui?
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="jointhecause">
-        <div class="container">
-            <h1>Join the Cause!</h1>
-            <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae!
-                <cite>Somebody famous</cite>
-            </blockquote>
-        </div>
-    </section>
-    <section class="about">
-        <div class="container">
-            <div class="col-md-8 col-xs-8 col-sm-8">
-                <h1 class="text-center">About Us</h1>
-                <p>
-                    <span class="special-text">Pinoy Programmers League</span> is an online non-profit organization for professional programmers that aims to promote 
-                excellence, global-awareness, intelligence, passion and commitment of Filipinos to the development of IT and 
-                programming in the Philippines - through Computing and Engineering; while patronizing the effectiveness of computer
-                 programs towards a better and fast-changing world.
-                </p>
-                 <br />
-                <div class="center-block text-center" >
-                   
-                    <a href="public/views/aboutus.html" class="btn btn-custom text-center">Know Us Better</a>
-                </div>
-            </div>
-            <div class="col-md-4 col-xs-4 col-sm-4">
-                <a class="btn-circle-link facebook-icon" target="_blank" href="https://www.facebook.com/groups/pinoyprogleague/"><i class="fa fa-facebook fa-5x"></i></a>
-
-            </div>
-        </div>
-    </section>
-
+    <div ng-view>
+        
+    </div>
     <div style="display: block; height: 150px;">some footer here</div>
-    <script src="bower_components\jquery\dist\jquery.js"></script>
-    <script src="bower_components\bootstrap\dist\js\bootstrap.js"></script>
+    <script src="bower_components\jquery\dist\jquery.min.js"></script>
+    <script src="bower_components\bootstrap\dist\js\bootstrap.min.js"></script>
     <script type="text/javascript" src="public/js/script.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    
+    
+    <script src="public/js/mainsite/mainsite.js"></script>
+    <script src="public/js/mainsite/about/AboutController.js"></script>
+    <script src="public/js/mainsite/about/AboutFactory.js"></script>
+    <script src="public/js/app.js"></script>
+
 </body>
 </html>

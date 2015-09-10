@@ -1,111 +1,137 @@
-@font-face {
+@font-face
+{
+    src:url(../fonts/neuropol.ttf);
     font-family: Neuropol;
-    src: url("../fonts/neuropol.ttf") /* EOT file for IE */
 }
 
-h1, h2, h3, h4 , h5, .special-text {
-	font-family: Neuropol;
+.aboutus h1, .aboutus h2, .aboutus h3, .aboutus h5, .aboutus h4
+{
+    font-family: Neuropol;
+}
+
+.card
+{
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    width: auto;
+    min-height: 220px;    
+    margin-bottom: 10px;
+    background-color: whitesmoke;
+    padding: 10px 0;
+}
+
+    /*.card:hover {
+	transform: scale(1.05);
+}*/
+
+    .card .img-holder img
+    {
+        width: 100%;
+        height: 100%;
+        max-height: 200px;
+    }
+
+    .card h5
+    {
+        font-weight: bold;
+        margin: 2px;
+    }
+
+
+.carousel-inner, .carousel, .item, .fill
+{
+    max-height: 750px;
+    width: 100%;
+}
+
+.special-text
+{
+    font-weight: bold;
+}
+
+@media (min-width: 1200px)
+{
+    .aboutus.container
+    {
+        width: 970px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (min-width: 480px)
+{
+    .aboutus .col-xs-12
+    {
+        float: left;
+        width: 50%;
+    }
+}
+
+
+.aboutus.container
+{
+    margin-top: 40px;
+}
+
+.aboutus h2
+{
+    font-size: 27px;
+    line-height: 39px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.aboutus h3
+{
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+
+.aboutus blockquote
+{
+    margin: 10px;
+    font-size: 15px;
+    color: black;
+    text-align: justify;
+}
+
+    .aboutus blockquote:first-letter
+    {
+        float: left;
+        color: #d63431;
+        font-size: 40px;
+        line-height: 38px;
+        padding-top: 4px;
+        padding-right: 8px;
+        padding-left: 3px;
+        font-weight: bold;
+    }
+
+    
+
+.aboutus a.link
+{
+    color: #d63431;
+}
+
+.aboutus a.github
+{
     color: black;
 }
 
-.card {	
-	-webkit-box-shadow: 2px 2px 19px -2px rgba(0,0,0,1);
-	-moz-box-shadow: 2px 2px 19px -2px rgba(0,0,0,1);
-	box-shadow: 2px 2px 19px -2px rgba(0,0,0,1);			
-	width: auto;
-	min-height: 250px;
+.aboutus a.facebook
+{
+    color: #3b5998;
 }
 
-.card:hover {
-	transform: scale(1.05);
+.aboutus a.email
+{
+    color: green;
 }
 
-.card .img-holder img {
-	width: 100%;
-	height: 100%;
-	max-height: 200px;
-}
-
-/*member-container {
-    margin: 0 auto;
-    width: 1200px;
-}*/
-
-/*.banner {
-	background: url(../images/bm.jpg);
-	background-position: center center;
-    background-repeat: no-repeat;
-   
-    background-size: cover; height: 100%
-}*/
-/*
-.banner .banner-text {
-	background-color: rgba(255,0,0, 0.5);
-	right: 0px;
-	bottom: 0px;
-	position: absolute;
-	color: white;
-	width: 300px;
-	padding: 5px;
-}*/
-
-.carousel-inner,.carousel,.item,.container,.fill {  
-  max-height: 750px;
-  width:100%;
-}
-
-.special-text {
-	font-weight: bold;
-}
-
-@media (min-width: 1200px) {
-  .container {
-    width: 970px;
-  }
-}
-
-@media only screen and (max-width: 767px) and (min-width: 480px) {
-  .col-xs-12 {
-    float: left;
-    width: 50%;
-  }
-}
-
-.btn-circle {
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 12px;
-  line-height: 1.42;
-  border-radius: 20px;
-}
-
-.btn-circle.link {   
-    right: 15px;
-    z-index: 1000;
-    color: white;    
-    float: left;
-}
-
-.btn-circle.link:hover {
-    background-color:rgba(255, 0, 0, 0.5) !important;
-}
-
-.btn-circle.link.github {
-    background-color: rgba(128, 128, 128,0.5);        
-}
-
-.btn-circle.link.facebook {
-    background-color: rgba(0, 0, 255,0.5);        
-}
-
-.links-container {
-    display: inline-block;
-    bottom: 50px;
-    left:15px;    
-    width: 100%;
-    position: absolute;
-    height: 50px;
-    
-}
+    .aboutus a.link:hover
+    {
+        color: rgb(134, 5, 5);
+    }
