@@ -1,23 +1,20 @@
-@font-face
-{
-    src:url(../fonts/neuropol.ttf);
+@font-face {
+    src: url(../fonts/neuropol.ttf);
     font-family: Neuropol;
 }
 
-.aboutus h1, .aboutus h2, .aboutus h3, .aboutus h5, .aboutus h4
-{
+.aboutus h1, .aboutus h2, .aboutus h3, .aboutus h5, .aboutus h4 {
     font-family: Neuropol;
 }
 
-.card
-{
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+.card {
+    /*-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
     width: auto;
-    min-height: 220px;    
+    
+    min-height: 220px;
     margin-bottom: 10px;
-    background-color: whitesmoke;
     padding: 10px 0;
 }
 
@@ -25,80 +22,87 @@
 	transform: scale(1.05);
 }*/
 
-    .card .img-holder img
-    {
-        width: 80%;
-        height: 100%;
-        max-height: 200px;
+    .card .img-holder {
+        max-width: 75%;
     }
 
-    .card h5
-    {
+    .card .img-holder img {
+        height: 100%;
+        max-height: 180px;
+        border: inherit 8px #000000;
+        -moz-border-radius-topleft: 75px;
+        -moz-border-radius-topright: 75px;
+        -moz-border-radius-bottomleft: 75px;
+        -moz-border-radius-bottomright: 75px;
+        -webkit-border-top-left-radius: 75px;
+        -webkit-border-top-right-radius: 75px;
+        -webkit-border-bottom-left-radius: 75px;
+        -webkit-border-bottom-right-radius: 75px;
+        border-top-left-radius: 75px;
+        border-top-right-radius: 75px;
+        border-bottom-left-radius: 75px;
+        border-bottom-right-radius: 75px;
+        border-radius: 50%;
+    }
+
+    .card h5 {
         font-weight: bold;
         margin: 2px;
     }
 
 
-.carousel-inner, .carousel, .item, .fill
-{
+.carousel-inner, .carousel, .item, .fill {
     max-height: 750px;
     width: 100%;
 }
 
-.special-text
-{
+.special-text {
     font-weight: bold;
 }
 
-@media (min-width: 1200px)
-{
-    .aboutus.container
-    {
-        width: 970px;
+@media (min-width: 1200px) {
+    .aboutus.container {
+        width: 1100px;
     }
 }
 
-@media only screen and (max-width: 767px) and (min-width: 480px)
-{
-    .aboutus .col-xs-12
-    {
+@media only screen and (max-width: 767px) and (min-width: 480px) {
+    .aboutus .col-xs-12 {
         float: left;
         width: 50%;
     }
 }
 
+.aboutus-section {
+    background: linear-gradient(#C5D1E6, #9999FF, #6d8cc1);
+}
 
-.aboutus.container
-{
+.aboutus.container {
     margin-top: 40px;
 }
 
-.aboutus h2
-{
+.aboutus h2 {
     font-size: 27px;
     line-height: 39px;
     margin-bottom: 10px;
     font-weight: 500;
 }
 
-.aboutus h3
-{
+.aboutus h3 {
     font-size: 24px;
     line-height: 35px;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.aboutus blockquote
-{
+.aboutus blockquote {
     margin: 10px;
     font-size: 15px;
     color: black;
     text-align: justify;
 }
 
-    .aboutus blockquote:first-letter
-    {
+    .aboutus blockquote:first-letter {
         float: left;
         color: #d63431;
         font-size: 40px;
@@ -109,29 +113,24 @@
         font-weight: bold;
     }
 
-    
 
-.aboutus a.link
-{
+
+.aboutus a.link {
     color: #d63431;
 }
 
-.aboutus a.github
-{
+.aboutus a.github {
     color: black;
 }
 
-.aboutus a.facebook
-{
+.aboutus a.facebook {
     color: #3b5998;
 }
 
-.aboutus a.email
-{
+.aboutus a.email {
     color: green;
 }
 
-    .aboutus a.link:hover
-    {
-        color: rgb(134, 5, 5);
-    }
+.aboutus a.link:hover {
+    color: rgb(134, 5, 5);
+}

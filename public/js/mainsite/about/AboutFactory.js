@@ -76,7 +76,7 @@ function aboutFactory() {
     },
     {
         name: "Kenneth Bolico",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/kenneth.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
@@ -97,14 +97,14 @@ function aboutFactory() {
     },
     {
         name: "Ian Concepcion",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/ian.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
         name: "Regine Grace In",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/regine.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
