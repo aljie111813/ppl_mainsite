@@ -18,35 +18,35 @@ function aboutFactory() {
     },
     {
         name: "Dexter Qua",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/dexter.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
         name: "Jemlon Sagarino",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/jemlon.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
         name: "Majesty Amazona",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/majesty.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
         name: "Zee",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/zee.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
     },
     {
         name: "Jason Crisostomo",
-        image: "public/images/bm.jpg",
+        image: "public/images/members/jaeson.jpg",
         links: [
         ],
         quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eget leo nunc, nec tempus mi? Curabitur id nisl mi, ut vulputate urna. Quisque porta facilisis tortor, vitae bibendum velit fringilla vitae! Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
