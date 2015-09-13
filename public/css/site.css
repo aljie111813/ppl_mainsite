@@ -186,24 +186,13 @@
 }
 
 .aboutus blockquote
-{
-    margin: 10px;
+{    
     font-size: 15px;
     text-align: justify;
     letter-spacing: 1px;    
 }
 
-    .aboutus blockquote:first-letter
-    {
-        float: left;
-        color: #d63431;
-        font-size: 40px;
-        line-height: 38px;
-        padding-top: 4px;
-        padding-right: 8px;
-        padding-left: 3px;
-        font-weight: bold;
-    }
+   
 
 .aboutus hr
 {

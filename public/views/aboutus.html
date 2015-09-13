@@ -47,7 +47,7 @@
                     </div>
                     <div class="col-md-8">
                         <blockquote>{{committee.quote}}</blockquote>
-                        <div ng-class=" $index % 2 !== 0 ? 'text-left' : 'text-right' ">
+                        <div ng-class=" $index % 2 === 0 ? 'text-left' : 'text-right' ">
                             <h5>{{committee.name}}</h5>
                             <a href="http://www.github.com/kenblizzard" target="_blank" class="link github"><i class="fa fa-github-square fa-2x"></i></a>
                             <a href="http://www.github.com/kenblizzard" target="_blank" class="link facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
@@ -77,7 +77,7 @@
                     </div>
                     <div class="col-md-8">
                         <blockquote>{{member.quote}}</blockquote>
-                        <div ng-class=" $index % 2 === 0 ? 'text-left' : 'text-right' ">
+                        <div ng-class=" $index % 2 !== 0 ? 'text-left' : 'text-right' ">
                             <h5>{{member.name}}</h5>
                             <a href="http://www.github.com/kenblizzard" target="_blank" class="link github"><i class="fa fa-github-square fa-2x"></i></a>
                             <a href="http://www.github.com/kenblizzard" target="_blank" class="link facebook"><i class="fa fa-facebook-square fa-2x"></i></a>
