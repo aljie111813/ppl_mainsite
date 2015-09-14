@@ -5,7 +5,7 @@ $(document).ready(function () {
     var $navbarBrandImage = $('.navbar-brand img');
     $navbarBrandImage.hide();
     jQuery(window).bind('scroll', function () {
-        if (jQuery(window).scrollTop() > 20) {
+        if (jQuery(window).scrollTop() > window.innerHeight) {
 
             jQuery('.navbar-default').css({
                 '-webkit-transform': 'translate3d(0, 0, 0)',
@@ -13,7 +13,8 @@ $(document).ready(function () {
                 '-o-transform': 'translate3d(0, 0, 0)',
                 'transform': 'translate3d(0, 0, 0)',
                 'background-color': 'white',
-                'border-bottom': 'rgba(0,0,0,0.1) solid 1px'
+                'border-bottom': 'rgba(0,0,0,0.1) solid 1px',
+                'box-shadow': '0px 0px 5px 0px rgba(0,0,0,0.3)'
             });
 
             $navbarBrandImage.show();
@@ -22,7 +23,8 @@ $(document).ready(function () {
 
             jQuery('.navbar-default').css({
                 'background-color': 'transparent',
-                'border-bottom': 'transparent'
+                'border-bottom': 'transparent',
+                'box-shadow': 'transparent 0px 0px 0px 0px',
             });
             $navbarBrandImage.hide();
         }
@@ -50,7 +52,7 @@ $(document).ready(function () {
         });
     });
 
-    
+
     /* Scroll to Top button */
 
     var scrollButton = $("#scroll-top");

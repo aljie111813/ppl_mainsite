@@ -156,7 +156,8 @@ h3 {
 /*OVERRIDING BOOTSTRAP*/
 .navbar-default {
   background-color: transparent; 
-  border-color: #D3D3D3;
+  box-shadow: transparent
+  border-color: #D3D3D3;;
   -webkit-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
