@@ -155,20 +155,20 @@ h3 {
 
 /*OVERRIDING BOOTSTRAP*/
 .navbar-default {
-  background-color: #ffffff;
+  background-color: transparent; 
   border-color: #D3D3D3;
   -webkit-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
   transition: all ease-in-out 0.5s;
 
-  -webkit-transform: translate3d(0, -100%, 0);
+  /*-webkit-transform: translate3d(0, -100%, 0);
   -moz-transform: translate3d(0, -100%, 0);
   -o-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);*/
 }
 
-.navbar {min-height: 67px;}
+.navbar {min-height: 67px; border-bottom: 0px;}
 .navbar-default .navbar-brand {
   float: left;
   height: 50px;
@@ -203,8 +203,7 @@ h3 {
 /*END OF OVERRIDING BOOTSTRAP*/
 
 /*START OF HEADER*/
-.cd-main-header {
-  border-top: 2px solid #d63431;
+.cd-main-header {  
   background-color: #6d8cc1;
   padding: 50px 0 0 0;
   overflow: hidden;
