@@ -126,8 +126,12 @@
 
 .aboutus-members
 {
-    background: #6d8cc1;
-    color: white;
+    background-color: #6d8cc1 ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;    
 }
 
 .aboutus.container
