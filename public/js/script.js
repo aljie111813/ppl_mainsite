@@ -4,29 +4,42 @@ $(document).ready(function () {
     /* Show/hide navbar on scroll action*/
     var $navbarBrandImage = $('.navbar-brand img');
     $navbarBrandImage.hide();
+
+    var $navbar = $('.navbar-default');
+    var $navbarAnchors = $('.navbar-default .navbar-nav  li  a');
+
     jQuery(window).bind('scroll', function () {
         if (jQuery(window).scrollTop() > 20) {
 
-            jQuery('.navbar-default').css({
+            $navbar.css({
                 '-webkit-transform': 'translate3d(0, 0, 0)',
                 '-moz-transform': 'translate3d(0, 0, 0)',
                 '-o-transform': 'translate3d(0, 0, 0)',
                 'transform': 'translate3d(0, 0, 0)',
                 'background-color': 'white',
                 'border-bottom': 'rgba(0,0,0,0.1) solid 1px',
-                'box-shadow': '0px 0px 5px 0px rgba(0,0,0,0.3)'
+                'box-shadow': '0px 0px 5px 0px rgba(0,0,0,0.3)',
+                //'color':'#525151'
             });
+
+            $navbarAnchors.css('color', '#525151 ');
+
 
             $navbarBrandImage.show();
 
         } else {
 
-            jQuery('.navbar-default').css({
+            $navbar.css({
                 'background-color': 'transparent',
                 'border-bottom': 'transparent',
                 'box-shadow': 'transparent 0px 0px 0px 0px',
             });
+
+            $navbarAnchors.css('color', 'white ');
+
             $navbarBrandImage.hide();
+
+
         }
     });
 

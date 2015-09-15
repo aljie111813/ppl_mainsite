@@ -56,7 +56,7 @@ body, html {
   z-index: 999;
   display: none;
   cursor: pointer;
-  box-shadow: 0px 0px 5px 0px white;
+  box-shadow: 0px 0px 1px 0px white;
 }
 #scroll-top:hover {
   background-color: #d63431;
@@ -157,8 +157,8 @@ h3 {
 /*OVERRIDING BOOTSTRAP*/
 .navbar-default {
   background-color: transparent; 
-  box-shadow: transparent
-  border-color: #D3D3D3;;
+  box-shadow: transparent;
+  border-color: #D3D3D3;
   -webkit-transition: all ease-in-out 0.5s;
   -moz-transition: all ease-in-out 0.5s;
   -o-transition: all ease-in-out 0.5s;
@@ -183,7 +183,7 @@ h3 {
   -moz-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
-  color: #525151;
+  color: white;
   text-transform: uppercase;
   font-weight: bold;
   padding-top: 24px;
@@ -201,12 +201,13 @@ h3 {
   text-transform: uppercase;
   font-size: 13px;
   border-radius: 0px;
+  background-color: transparent;
 }
 /*END OF OVERRIDING BOOTSTRAP*/
 
 /*START OF HEADER*/
 .cd-main-header {  
-  background-color: #6d8cc1;
+  background-color: maroon;
   padding: 50px 0 0 0;
   overflow: hidden;
   position: relative;
@@ -475,11 +476,13 @@ p.pcol {
 }
 @media only screen and (max-width: 767px) {
   /*OVERRIDING BOOTSTRAP*/
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
+  .navbar-default .navbar-toggle {    
     margin-top: 14px;
   }
-  .navbar-collapse {margin-top: 9px;}
+  .navbar-collapse {
+      margin-top: 9px;
+      background-color: rgba(0,0,0,.5);      
+  }
   .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {border-top: none;}
   .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {max-height: 100%;}
   .navbar-default .navbar-nav > li > a {
@@ -487,7 +490,7 @@ p.pcol {
     -moz-transition: all ease-in-out 0.3s;
     -o-transition: all ease-in-out 0.3s;
     transition: all ease-in-out 0.3s;
-    color: #525151;
+    color: white;
     text-transform: uppercase;
     font-weight: bold;
     padding-top: 12px;
@@ -528,7 +531,7 @@ p.pcol {
   .jointhecause blockquote:before {font-size: 40px;}
   .jointhecause blockquote:after {font-size: 40px;}
 
-  .contact-icon ul li {margin: 0 10px;}
+  .contact-icon ul li {margin: 5px 10px;}
   .contact-icon .fa {
     font-size: 35px;
     margin-top: 9px;
