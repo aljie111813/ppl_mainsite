@@ -5,7 +5,7 @@ $(document).ready(function () {
     var $navbarBrandImage = $('.navbar-brand img');
     $navbarBrandImage.hide();
     jQuery(window).bind('scroll', function () {
-        if (jQuery(window).scrollTop() > window.innerHeight) {
+        if (jQuery(window).scrollTop() > 20) {
 
             jQuery('.navbar-default').css({
                 '-webkit-transform': 'translate3d(0, 0, 0)',

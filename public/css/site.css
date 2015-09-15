@@ -8,7 +8,7 @@
 
 .aboutus-banner
 {
-    background: linear-gradient( #6d8cc1, #6d8cc1,#6d8cc1,pink,pink) no-repeat center center fixed;
+    background: linear-gradient( #6d8cc1, #6d8cc1,#6d8cc1,pink,pink) ;
     position: relative;
     height: 100%;
 }
