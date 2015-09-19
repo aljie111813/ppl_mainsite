@@ -7,7 +7,7 @@
 
     <title>Pinoy Programmers League</title>
     <!--<link href='bower_components\bootstrap\dist\css\bootstrap.css' rel="stylesheet">-->
-    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel='stylesheet'>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel='stylesheet'>
     <link href="bower_components/fontawesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/reset.css">
     <link href='public/css/site.css' rel='stylesheet'>
@@ -33,7 +33,7 @@
                     <img src="public/images/logo.png" draggable="false" class="img-responsive" alt="logo"></a>
             </div>
 
-            <div class="collapse navbar-collapse" id="navigation-1">
+            <div class="collapse navbar-collapse text-center" id="navigation-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="active"><a href="#/">home</a></li>
 
@@ -48,14 +48,16 @@
                         </ul>
                     </li>
 
-                    <li><a href="#/">join the cause</a></li>
+                    <li><a href="#/join">join the cause</a></li>
                     <li><a href="#/about/">about us</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div ng-view>
-    </div>
+
+    
+    <div ng-view></div>
+    
 
     <footer class="navigation">
         <div class="container">
@@ -104,7 +106,7 @@
     
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="bower_components/angular-route/angular-route.min.js"></script>
-
+    <script src="bower_components/angular-animate/angular-animate.min.js"></script>
 
     <script src="public/js/mainsite/mainsite.js"></script>
     <script src="public/js/mainsite/about/AboutController.js"></script>
@@ -113,7 +115,8 @@
 
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="public/js/script.js"></script>
 
 </body>

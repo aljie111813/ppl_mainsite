@@ -1,5 +1,5 @@
 // CUSTOM JS
-$(document).ready(function () {
+$(window).ready(function () {
 
     /* Show/hide navbar on scroll action*/
     var $navbarBrandImage = $('.navbar-brand img');
@@ -28,6 +28,33 @@ $(document).ready(function () {
             });
             $navbarBrandImage.hide();
         }
+
+
+        var pContainerHeight = $('.cd-main-header').height();
+
+        //$(window).scroll(function () {
+
+            var wScroll = $(this).scrollTop();
+
+            if (wScroll <= pContainerHeight) {
+
+                $('#img, #h1, #btn').css({
+                    'transform': '-webkit-translate(-' + wScroll / 10 + '%, 0px)',
+                    'transform': '-moz-translate(-' + wScroll / 10 + '%, 0px)',
+                    'transform': '-o-translate(-' + wScroll / 10 + '%, 0px)',
+                    'transform': 'translate(-' + wScroll / 10 + '%, 0px)'
+                });
+
+                $('#head-img').css({
+                    'transform': '-webkit-translate(' + wScroll / 10 + '%, 0px)',
+                    'transform': '-moz-translate(' + wScroll / 10 + '%, 0px)',
+                    'transform': '-o-translate(' + wScroll / 10 + '%, 0px)',
+                    'transform': 'translate(' + wScroll / 10 + '%, 0px)'
+                });
+
+
+            }
+        //});
     });
 
 
@@ -65,33 +92,12 @@ $(document).ready(function () {
 
 
 
-    var pContainerHeight = $('.cd-main-header').height();
-
-    $(window).scroll(function () {
-
-        var wScroll = $(this).scrollTop();
-
-        if (wScroll <= pContainerHeight) {
-
-            $('#h1').css({
-                'transform': 'translate(0px, ' + wScroll / 0.7 + '%)'
-            });
-
-            $('#img').css({
-                'transform': 'translate(0px, ' + wScroll / 1.5 + '%)'
-            });
-
-            $('#btn').css({
-                'transform': 'translate(0px, ' + wScroll / 20 + '%)'
-            });
-
-            $('#head-img').css({
-                'transform': 'translate(' + wScroll / 20 + '%, 0px)'
-            });
-
-
-        }
-    });
+   
 
 });
 
+$(document).ready(function () {
+  $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("active");
+  });
+});
