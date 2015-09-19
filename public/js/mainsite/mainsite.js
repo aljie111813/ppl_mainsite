@@ -1,4 +1,4 @@
-﻿angular.module('mainSiteModule', ['ngRoute'])
+﻿angular.module('mainSiteModule', ['ngRoute','ngAnimate'])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
 
@@ -8,6 +8,9 @@
             })
             .when('/', {
                 templateUrl: 'public/views/home.html'
+            }).
+            when('/join', {
+                templateUrl: 'public/views/join-the-cause.html'
             });
 
 

@@ -1,46 +1,60 @@
 // CUSTOM JS
-$(document).ready(function () {
+$(window).ready(function () {
 
     /* Show/hide navbar on scroll action*/
     var $navbarBrandImage = $('.navbar-brand img');
     $navbarBrandImage.hide();
-
-    var $navbar = $('.navbar-default');
-    var $navbarAnchors = $('.navbar-default .navbar-nav  li  a');
-
     jQuery(window).bind('scroll', function () {
         if (jQuery(window).scrollTop() > 20) {
 
-            $navbar.css({
+            jQuery('.navbar-default').css({
                 '-webkit-transform': 'translate3d(0, 0, 0)',
                 '-moz-transform': 'translate3d(0, 0, 0)',
                 '-o-transform': 'translate3d(0, 0, 0)',
                 'transform': 'translate3d(0, 0, 0)',
                 'background-color': 'white',
                 'border-bottom': 'rgba(0,0,0,0.1) solid 1px',
-                'box-shadow': '0px 0px 5px 0px rgba(0,0,0,0.3)',
-                //'color':'#525151'
+                'box-shadow': '0px 0px 5px 0px rgba(0,0,0,0.3)'
             });
-
-            $navbarAnchors.css('color', '#525151 ');
-
 
             $navbarBrandImage.show();
 
         } else {
 
-            $navbar.css({
+            jQuery('.navbar-default').css({
                 'background-color': 'transparent',
                 'border-bottom': 'transparent',
                 'box-shadow': 'transparent 0px 0px 0px 0px',
             });
-
-            $navbarAnchors.css('color', 'white ');
-
             $navbarBrandImage.hide();
-
-
         }
+
+
+        var pContainerHeight = $('.cd-main-header').height();
+
+        //$(window).scroll(function () {
+
+            var wScroll = $(this).scrollTop();
+
+            if (wScroll <= pContainerHeight) {
+
+                $('#img, #h1, #btn').css({
+                    'transform': '-webkit-translate(-' + wScroll / 10 + '%, 0px)',
+                    'transform': '-moz-translate(-' + wScroll / 10 + '%, 0px)',
+                    'transform': '-o-translate(-' + wScroll / 10 + '%, 0px)',
+                    'transform': 'translate(-' + wScroll / 10 + '%, 0px)'
+                });
+
+                $('#head-img').css({
+                    'transform': '-webkit-translate(' + wScroll / 10 + '%, 0px)',
+                    'transform': '-moz-translate(' + wScroll / 10 + '%, 0px)',
+                    'transform': '-o-translate(' + wScroll / 10 + '%, 0px)',
+                    'transform': 'translate(' + wScroll / 10 + '%, 0px)'
+                });
+
+
+            }
+        //});
     });
 
 
@@ -78,33 +92,12 @@ $(document).ready(function () {
 
 
 
-    var pContainerHeight = $('.cd-main-header').height();
-
-    $(window).scroll(function () {
-
-        var wScroll = $(this).scrollTop();
-
-        if (wScroll <= pContainerHeight) {
-
-            $('#h1').css({
-                'transform': 'translate(0px, ' + wScroll / 0.7 + '%)'
-            });
-
-            $('#img').css({
-                'transform': 'translate(0px, ' + wScroll / 1.5 + '%)'
-            });
-
-            $('#btn').css({
-                'transform': 'translate(0px, ' + wScroll / 20 + '%)'
-            });
-
-            $('#head-img').css({
-                'transform': 'translate(' + wScroll / 20 + '%, 0px)'
-            });
-
-
-        }
-    });
+   
 
 });
 
+$(document).ready(function () {
+  $(".navbar-toggle").on("click", function () {
+        $(this).toggleClass("active");
+  });
+});
