@@ -8,9 +8,7 @@
 
 .aboutus-banner
 {
-    background: linear-gradient( rgb(0,38,58) 70%, rgb(6, 101, 114 ) 30% );
-    position: relative;
-    height: 100%;
+    background: linear-gradient( rgb(0,38,58) 70%, rgb(6, 101, 114 ) 30% );    
 }
 
     .aboutus-banner img
