@@ -1,4 +1,4 @@
-﻿angular.module('mainSiteModule', ['ngRoute','ngAnimate'])
+﻿angular.module('mainSiteModule', ['ngRoute', 'ngAnimate', 'fox.scrollReveal'])
     .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
         $routeProvider
 

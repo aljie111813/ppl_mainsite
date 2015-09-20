@@ -265,65 +265,77 @@ h3
 /*END OF GLOBAL CSS*/
 
 /*OVERRIDING BOOTSTRAP*/
-.navbar-default
-{
-    background-color: transparent;
-    box-shadow: transparent border-color: #D3D3D3;
-    ;
-    -webkit-transition: all ease-in-out 0.5s;
-    -moz-transition: all ease-in-out 0.5s;
-    -o-transition: all ease-in-out 0.5s;
-    transition: all ease-in-out 0.5s;
-    /*-webkit-transform: translate3d(0, -100%, 0);
-  -moz-transform: translate3d(0, -100%, 0);
-  -o-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);*/
+.navbar-default {
+  background-color: transparent; 
+  border-color: transparent !important;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.navbar-default .navbar-nav > li > a {
+  text-transform: uppercase;
+  color: #ffffff;
+  -webkit-transition: all ease-in-out 0.4s;
+  -moz-transition: all ease-in-out 0.4s;
+  -o-transition: all ease-in-out 0.4s;
+  transition: all ease-in-out 0.4s;
+  font-size: 13px;
+}
+.navbar-default .navbar-brand {
+  opacity: 0;
+  padding: 0;
+  -webkit-transition: all ease-in-out 0.5s;
+  -moz-transition: all ease-in-out 0.5s;
+  -o-transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.5s;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  color: #ffffff; 
+  background-color: transparent; 
+  border-top: 3px solid #ff0500;
+  position: relative;
+  line-height: 1;
+}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {
+  color: #D63431;
+  background-color: #383838;
+}
+.navbar-default .dropdown-menu {
+  text-transform: uppercase;
+  font-size: 13px;
+  border-radius: 0px;
+  background-color: #383838;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {color: #D63431;}
+.navbar-default .dropdown-menu>li>a {
+  color: #E5E5E5;
+}
+.navbar-brand .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  color: #B5B5B5 !important;
+  text-decoration: none;
+  background-color: transparent;
 }
 
-.navbar
-{
-    min-height: 67px;
-    border-bottom: 0px;
+/*affix*/
+.navbar-default.affix {
+  background-color: #F5F5F5;
+  border-color: #C8C8C8;
 }
+.navbar-default.affix .navbar-brand {opacity: 1;}
+.navbar.affix {min-height: 67px;}
+.navbar-default.affix .navbar-brand {height: 50px;padding: 3px 15px;}
 
-.navbar-default .navbar-brand
-{
-    float: left;
-    height: 50px;
-    padding: 3px 15px;
-    font-size: 18px;
-    line-height: 20px;
+.navbar-default.affix .navbar-nav > li > a {
+  color: #525151;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  opacity: 1;
+  font-size: 14px;
 }
-
-.navbar-default .navbar-nav > li > a
-{
-    -webkit-transition: all ease-in-out 0.3s;
-    -moz-transition: all ease-in-out 0.3s;
-    -o-transition: all ease-in-out 0.3s;
-    transition: all ease-in-out 0.3s;
-    color: #525151;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
-
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus
-{
-    color: #000000;
-    background-color: transparent;
-    height: 50px;
-    border-top: 3px solid #ff0500;
-    position: relative;
-    line-height: 1;
-}
-
-.dropdown-menu
-{
-    text-transform: uppercase;
-    font-size: 13px;
-    border-radius: 0px;
-}
+.navbar-default.affix .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {color: #D63431;}
 /*END OF OVERRIDING BOOTSTRAP*/
 
 /*START OF HEADER*/
@@ -987,19 +999,16 @@ p.pcol
 
 
 .ng-enter
-{
-    top: 0px;
-    position: absolute;
+{        
     animation: slideInRight 1s both ease-in;
     z-index: 8888;
 }
 
-.ng-leave
-{
-    position: absolute;
-    animation: rotateFall 1s both ease-in;
+/*.ng-leave
+{    
+    animation: rotateFall 0.75s both ease-in;
     z-index: 9999;
-}
+}*/
 
 
 
@@ -1025,6 +1034,7 @@ p.pcol
     animation: slideOutLeft 0.5s both ease-in;
 }
 
+
 /* contact ---------------------- */
 .page-contact.ng-leave
 {
@@ -1037,4 +1047,4 @@ p.pcol
     animation: slideInUp 0.5s both ease-in;
 }
 
-*/
+
