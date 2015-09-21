@@ -264,6 +264,53 @@ h3
 }
 /*END OF GLOBAL CSS*/
 
+
+
+/*Start Of Section Loading*/
+.loading-overlay {
+  background: #ffffff;
+  color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  background-color: #FF0000;
+  position: relative;
+  margin: 21% auto;
+  text-align: center;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+/*End Of Section Loading*/
+
+
+
 /*OVERRIDING BOOTSTRAP*/
 .navbar-default {
   background-color: transparent; 
@@ -557,7 +604,7 @@ p.pcol
     .navigation ul li
     {
         font-size: 14px;
-        text-transform: uppercase;
+        text-transform: capitalize;
         color: #ffffff;
         display: list-item;
         padding: 3px 0;
@@ -565,9 +612,11 @@ p.pcol
 
         .navigation ul li:nth-child(1)
         {
+            text-transform: uppercase;
+            margin-top: 10px;
             font-weight: bold;
             font-size: 15px;
-            margin-bottom: 13px;
+            margin-bottom: 10px;
         }
 
         .navigation ul li a
@@ -648,10 +697,11 @@ p.pcol
 .copyright
 {
     padding: 20px 0;
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
-    background-color: #6d8cc1;
+    background-color: #282828;
     font-size: 14px;
+    color: white;
 }
 
 /*END OF CONTACT ICON*/

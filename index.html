@@ -14,6 +14,9 @@
     <link rel="stylesheet" href="public/css/style.css">
 </head>
 <body ng-app="pplMainSiteApp" data-sr-container='{ "reset":true, "vFactor": 0.2, "mobile": true }'>
+     <section class="loading-overlay">
+        <div class="spinner"></div>
+    </section>
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -60,31 +63,25 @@
             <div class="col-sm-3 col-xs-12" data-sr="enter left over 1.5s">
                 <ul>
                     <li>navigation</li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">what we do</a></li>
-                    <li><a href="#">join the cause</a></li>
-                    <li><a href="#">about us</a></li>
+                    <li><a href="#/">home</a></li>
+                    <li><a href="#/">what we do</a></li>
+                    <li><a href="#/">join the cause</a></li>
+                    <li><a href="#/">about us</a></li>
                 </ul>
             </div>
             <div class="col-sm-3 col-xs-12" data-sr="enter top over 1.5s">
-                <ul>
-                    <li>navigation</li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">what we do</a></li>
-                    <li><a href="#">join the cause</a></li>
-                    <li><a href="#">about us</a></li>
+                <ul>                    
+                    <li>About PPL</li>
+                    <li><a href="#/">Legal Information</a></li>
+                    <li><a href="#/">Terms and Agreements</a></li>
+                    <li><a href="#/">Privacy</a></li>
+                    <li><a href="#/">Contact Us</a></li>
+                    <li><a href="#/">Help</a></li>
+                    <li><a href="#/">Business</a></li>
                 </ul>
             </div>
-            <div class="col-sm-3 col-xs-12" data-sr="enter right over 1.5s">
-                <ul>
-                    <li>navigation</li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">what we do</a></li>
-                    <li><a href="#">join the cause</a></li>
-                    <li><a href="#">about us</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-3 col-xs-12" data-sr="enter right over 1.5s">
+            
+            <div class="col-sm-3 col-xs-12 pull-right" data-sr="enter right over 1.5s">
                 <img src="public/images/logo-footer.png" alt="logo-footer" class="img-responsive">
             </div>
         </div>
@@ -92,7 +89,7 @@
 
     <section class="copyright">
      <div class="container">
-      <p data-sr="enter left over 0.9s" >&copy;2015 <span>Pinoy Programmers League</span></p>
+      <p data-sr="enter left over 0.9s" >&copy; 2015 <span>Pinoy Programmers League. All rights reserved.</span></p>
      </div>
     </section>
 

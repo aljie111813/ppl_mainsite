@@ -1,4 +1,14 @@
 // CUSTOM JS
+//Loading Screen 
+$(window).load(function () {
+    //Show The Scroll
+    $(".loading-overlay .spinner").fadeOut(250, function () {
+        $(this).parent().fadeOut(1200, function () {
+            $(this).remove();
+        });
+    });
+});
+//End Loading Screen 
 $(document).ready(function () {
 
     /* Make AboutUs members' pics perfect circle */
