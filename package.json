@@ -1,0 +1,25 @@
+{
+  "name": "ppl_mainsite",
+  "version": "1.0.0",
+  "description": "<h3>September 9, 2015 at 04:00pm</h3> <p> Updated aboutus.html with progress around 50% </p> <br> <h3>TODO:</h3> <p>Add angularjs if homesite is already okay</p>",
+  "main": "build-js.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rockyru/ppl_mainsite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rockyru/ppl_mainsite/issues"
+  },
+  "homepage": "https://github.com/rockyru/ppl_mainsite#readme",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  },
+  "devDependencies": {
+    "grunt-contrib-requirejs": "^0.4.4"
+  }
+}
